@@ -16,51 +16,49 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
+            date="2024 - present"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Software Developer</h3>
+            <h4 className="vertical-timeline-element-subtitle">Dnipro / Remote</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Frontend Development, Content Integration, Corporate Websites, CMS
+            </p>
+            <p>
+              Maintaining and extending corporate websites (QuData, Absolutist), implementing new features and updating content. Working closely with designers and marketing teams.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
+            date="2018 - 2024"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">AI/ML Developer</h3>
+            <h4 className="vertical-timeline-element-subtitle">Dnipro / Remote</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              Chatbot Development, NLP, Open-Source LLMs, Assistant API Integration
+            </p>
+            <p>
+              Created and customized intelligent assistants using RASA and OpenAI tools. Focused on conversational NLP, dialogue logic, and domain-specific tuning.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
+            date="2017 - 2020"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Game Developer / Port Engineer</h3>
+            <h4 className="vertical-timeline-element-subtitle">Dnipro</h4>
             <p>
-              Full-stack Development, API Development, User Experience
+              Flash to HTML5 Porting, Game Logic, Cross-Platform Adaptation
             </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
             <p>
-              Automation, Data Governance, Statistical Analysis
+              Worked on game mechanics and tools in Lua, TypeScript and ActionScript. Ported Flash games to HTML5 for modern platforms.
             </p>
+            
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
