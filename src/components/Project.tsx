@@ -8,8 +8,10 @@ import mock06 from '../assets/images/mock06.png';
 import mock07 from '../assets/images/mock07.png';
 import mock08 from '../assets/images/mock08.png';
 import mock09 from '../assets/images/mock09.png';
-import mock10 from '../assets/images/mock10.png';
+import mock10 from '../assets/images/arcgis.png';
 import '../assets/styles/Project.scss';
+
+import Chip from '@mui/material/Chip';
 
 function Project() {
     return(
@@ -17,24 +19,48 @@ function Project() {
         <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><h2>Filmate AI</h2></a>
-                <p>Developed movie finder app with semantic search and sentiment analysis using OpenAI GPT-3.5 Turbo, Qdrant, React, and Flask.</p>
+                <a href="https://github.com/machinatororis/arcgis-data-upload-pipeline" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/machinatororis/arcgis-data-upload-pipeline" target="_blank" rel="noreferrer"><h2>ArcGIS Data Transformation and Upload</h2></a>
+                <p>Built a Python solution for transforming tabular geodata and uploading point features to ArcGIS Online using ArcGIS API for Python.</p>
+                <div className="flex-chips project-chips">
+                    <span className="chip-title">Technologies:</span>
+                    {["Python", "ArcGIS API", "pandas", "Pytest"].map((label, index) => (
+                        <Chip key={index} className="chip" label={label} />
+                    ))}
+                </div>
             </div>
             <div className="project">
                 <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><h2>High Speed Chase</h2></a>
                 <p>Designed, developed, and launched a 3D multiplayer racing game with C# and Unity. This is available on Itch.io for gamers worldwide to enjoy.</p>
+                <div className="flex-chips project-chips">
+                    <span className="chip-title">Technologies:</span>
+                    {["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "SASS", "Flask", "Python", "SQL", "PostgreSQL", "Postman"].map((label, index) => (
+                        <Chip key={index} className="chip" label={label} />
+                    ))}
+                </div>
             </div>
             <div className="project">
                 <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><h2>Astro Raiders</h2></a>
                 <p>Developed and released a 2D shooting game with C# and Unity. This project is hosted on the Itch.io public marketplace.</p>
+                <div className="flex-chips project-chips">
+                    <span className="chip-title">Technologies:</span>
+                    {["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "SASS", "Flask", "Python", "SQL", "PostgreSQL", "Postman"].map((label, index) => (
+                        <Chip key={index} className="chip" label={label} />
+                    ))}
+                </div>
             </div>
             <div className="project">
                 <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><img src={mock07} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><h2>Datum: Integrated Learning Platform</h2></a>
                 <p>This is an online educational platform that provides high-quality, data science-focused learning resources in the Japanese language. I created the entire platform from scratch using Ruby on Rails.</p>
+                <div className="flex-chips project-chips">
+                    <span className="chip-title">Technologies:</span>
+                    {["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "SASS", "Flask", "Python", "SQL", "PostgreSQL", "Postman"].map((label, index) => (
+                        <Chip key={index} className="chip" label={label} />
+                    ))}
+                </div>
             </div>
             <div className="project">
                 <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer"><img src={mock06} className="zoom" alt="thumbnail" width="100%"/></a>

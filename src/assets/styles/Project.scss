@@ -1,3 +1,7 @@
+.project-chips {
+  margin-top: 1rem;
+}
+
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -13,6 +17,24 @@
   
 .projects-container .projects-grid .project {
     text-align: left;
+}
+
+.projects-grid {
+  align-items: stretch;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project p {
+  margin-bottom: 1rem;
+}
+
+.project-chips {
+  margin-top: auto;
 }
   
 .project h2:hover {
