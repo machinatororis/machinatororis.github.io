@@ -1,6 +1,6 @@
 import React from "react";
-import mock01 from '../assets/images/mock01.png';
-import mock02 from '../assets/images/mock02.png';
+import mock01 from '../assets/images/lead-qualification-api.png';
+import mock02 from '../assets/images/arcgis.png';
 import mock03 from '../assets/images/mock03.png';
 import mock04 from '../assets/images/mock04.png';
 import mock05 from '../assets/images/mock05.png';
@@ -8,7 +8,7 @@ import mock06 from '../assets/images/mock06.png';
 import mock07 from '../assets/images/mock07.png';
 import mock08 from '../assets/images/mock08.png';
 import mock09 from '../assets/images/mock09.png';
-import mock10 from '../assets/images/arcgis.png';
+import mock10 from '../assets/images/mock10.png';
 import '../assets/styles/Project.scss';
 
 import Chip from '@mui/material/Chip';
@@ -19,7 +19,18 @@ function Project() {
         <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://github.com/machinatororis/arcgis-data-upload-pipeline" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/machinatororis/lead-qualification-api" target="_blank" rel="noreferrer"><img src={mock01} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/machinatororis/lead-qualification-api" target="_blank" rel="noreferrer"><h2>AI Lead Qualification API</h2></a>
+                <p>Developed a backend service for managing inbound leads, running AI-assisted scoring, and transferring qualified leads to sales through explicit business rules.</p>
+                <div className="flex-chips project-chips">
+                    <span className="chip-title">Technologies:</span>
+                    {["Python", "FastAPI", "PostgreSQL", "Tortoise ORM", "Docker", "Pytest"].map((label, index) => (
+                        <Chip key={index} className="chip" label={label} />
+                    ))}
+                </div>
+            </div>
+            <div className="project">
+                <a href="https://github.com/machinatororis/arcgis-data-upload-pipeline" target="_blank" rel="noreferrer"><img src={mock02} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/machinatororis/arcgis-data-upload-pipeline" target="_blank" rel="noreferrer"><h2>ArcGIS Data Transformation and Upload</h2></a>
                 <p>Built a Python solution for transforming tabular geodata and uploading point features to ArcGIS Online using ArcGIS API for Python.</p>
                 <div className="flex-chips project-chips">
@@ -29,17 +40,7 @@ function Project() {
                     ))}
                 </div>
             </div>
-            <div className="project">
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><h2>High Speed Chase</h2></a>
-                <p>Designed, developed, and launched a 3D multiplayer racing game with C# and Unity. This is available on Itch.io for gamers worldwide to enjoy.</p>
-                <div className="flex-chips project-chips">
-                    <span className="chip-title">Technologies:</span>
-                    {["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "SASS", "Flask", "Python", "SQL", "PostgreSQL", "Postman"].map((label, index) => (
-                        <Chip key={index} className="chip" label={label} />
-                    ))}
-                </div>
-            </div>
+            
             <div className="project">
                 <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><h2>Astro Raiders</h2></a>
@@ -83,12 +84,12 @@ function Project() {
                 <p>Designed and developed a custom component for a CMS-based platform (e.g., 'Brightspot') using Java, Handlebars, and LESS. University students can find their majors of interest through this module.</p>
             </div>
             <div className="project">
-                <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><img src={mock02} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><h2>Transfer Evaluation Matrix</h2></a>
                 <p>Created an interactive CSV table generator with Java, Handlebars, and LESS. This project helps transfer students to quickly identify eligible credits.</p>
             </div>
             <div className="project">
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><img src={mock01} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><h2>Submeowrine</h2></a>
                 <p>Developed and released an Android mobile application using Java and Android Studio that runs a 2D shooting game.</p>
             </div>
