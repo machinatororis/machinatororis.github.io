@@ -1,7 +1,7 @@
 import React from "react";
 import mock01 from '../assets/images/lead-qualification-api.png';
 import mock02 from '../assets/images/arcgis.png';
-import mock03 from '../assets/images/mock03.png';
+import mock03 from '../assets/images/currency-converter.png';
 import mock04 from '../assets/images/mock04.png';
 import mock05 from '../assets/images/mock05.png';
 import mock06 from '../assets/images/mock06.png';
@@ -36,6 +36,18 @@ function Project() {
                 <div className="flex-chips project-chips">
                     <span className="chip-title">Technologies:</span>
                     {["Python", "ArcGIS API", "pandas", "Pytest"].map((label, index) => (
+                        <Chip key={index} className="chip" label={label} />
+                    ))}
+                </div>
+            </div>
+
+             <div className="project">
+                <a href="https://github.com/machinatororis/currency_converter" target="_blank" rel="noreferrer"><img src={mock03} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/machinatororis/currency_converter" target="_blank" rel="noreferrer"><h2>Currency Converter Desktop App</h2></a>
+                <p>Desktop currency converter built with Python and CustomTkinter. It uses an exchange rate API, supports currency selection, and includes language UI switcher.</p>
+                <div className="flex-chips project-chips">
+                    <span className="chip-title">Technologies:</span>
+                    {["Python", "CustomTkinter", "Tkinter", "Requests", "python-dotenv", "API"].map((label, index) => (
                         <Chip key={index} className="chip" label={label} />
                     ))}
                 </div>
@@ -87,11 +99,6 @@ function Project() {
                 <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><h2>Transfer Evaluation Matrix</h2></a>
                 <p>Created an interactive CSV table generator with Java, Handlebars, and LESS. This project helps transfer students to quickly identify eligible credits.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><h2>Submeowrine</h2></a>
-                <p>Developed and released an Android mobile application using Java and Android Studio that runs a 2D shooting game.</p>
             </div>
         </div>
     </div>
