@@ -16,8 +16,10 @@
 }
   
 .skills-container .skills-grid .skill {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     text-align: left;
+    height: 100%;
 }
   
 .chip {
@@ -37,17 +39,23 @@
 }
 
 .flex-chips {
-    line-height: 2;
-    margin: 0.5;
+    margin-top: auto;
+    min-height: 118px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    gap: 8px 10px;
+    line-height: normal;
 
     .chip-title {
         color: white;
-        padding-right: 10px;
+        padding-right: 0;
     }
 }
 
 .flex-chips .MuiChip-root {
-    margin-right: 0.5em;
+    margin-right: 0;
 }
 
 .flex-chips .MuiChip-outlined {
